@@ -1,3 +1,7 @@
+---
+icon: dot
+---
+
 # pointer
 
 PocketPy supports pointers like C.

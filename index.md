@@ -1,3 +1,9 @@
+---
+
+icon: home
+
+---
+
 # Index
 
 PocketPy is a Python3 interpreter.
