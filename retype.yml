@@ -10,7 +10,7 @@ meta:
   title: " | A lightweight Python interpreter for game engines"
 links:
   - text: "Home"
-    icon: "home"
+    icon: home
     link: ""
   - text: "Live Demo"
     icon: play

@@ -5,12 +5,7 @@ label: Welcome
 
 # Welcome to PocketPy
 
-PocketPy is a Python3 interpreter.
+PocketPy is a C++17 header-only Python interpreter for game engines.
 
-| Intergration | Supported Platforms |
-| --- | --- |
-| [`C/C++`](references/c) | [!badge text="Source" variant="light"]
-| [`Flutter`](references/flutter) | [!badge text="Win" variant="secondary"] [!badge text="Android" variant="primary"] [!badge text="iOS" variant="warning"]
-| [`Unity Engine`](references/unity) | -
-| [`Godot Engine`](references/godot) | -
+![](./static/logo_flat.png)
 
