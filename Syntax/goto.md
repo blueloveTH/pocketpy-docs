@@ -26,9 +26,7 @@ for i in range(10):
 label .exit
 ```
 
-## Goto is not very safe
-
+!!!
 If you goto an illegal address, you will get `UnexpectedError` if we detect an illegal divert.
-
-However, in other case, the behaviour is undefined.
-
+In other case, the behaviour is undefined.
+!!!

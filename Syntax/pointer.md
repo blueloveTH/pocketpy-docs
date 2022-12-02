@@ -12,7 +12,7 @@ You can use `&` operator to get a pointer from a variable.
 
 The operand of `&` must be an *l-value*.
 
-```c
+```python
 # Correct usage
 p = &a
 p = &a[0]
@@ -29,7 +29,7 @@ p = &f(x, y)
 
 You can use `*` operator to access the value where a pointer points to.
 
-```c
+```python
 a = 1
 b = &a
 *b = 2
@@ -39,7 +39,7 @@ print(a)    # 2
 
 The swap function.
 
-```c
+```python
 def swap(a,b):
     t = *a
     *a = *b
@@ -54,7 +54,7 @@ print(x, y)     # 2 1
 
 You can use `->` operator to access the class member where a pointer points to. `a->b` is equal to `(*a).b`.
 
-```c
+```python
 a = [1, 2, 3]
 b = &a
 b->append(4)
