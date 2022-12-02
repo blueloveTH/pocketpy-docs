@@ -10,7 +10,7 @@ flutter pub add pocketpy
 ```
 
 ```dart
-import 'package:pocketpy/pocketpy.dart` as pkpy;
+import 'package:pocketpy/pocketpy.dart' as pkpy;
 ```
 
 ## pkpy.VM Class
