@@ -9,5 +9,5 @@ Delete a pointer allocated by `pkpy_xxx_xxx`.
 It can be `VM*`, `REPL*` or `PyXXXDump*`, etc.
 
 !!!
-If the pointer not allocated by `pkpy_xxx_xxx`, nothing will happen.
+If the pointer is not allocated by `pkpy_xxx_xxx`, nothing will happen.
 !!!
