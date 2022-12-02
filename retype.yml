@@ -6,7 +6,8 @@ branding:
   label: v0.4
   logo: "./static/logo.png"
 favicon: "./static/logo.png"
-title: PocketPy - A lightweight Python interpreter for game engines
+meta:
+  title: " | A lightweight Python interpreter for game engines"
 links:
   - text: "Home"
     icon: "home"

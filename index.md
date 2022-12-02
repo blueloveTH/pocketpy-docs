@@ -1,10 +1,9 @@
 ---
-
 icon: home
-
+label: Welcome
 ---
 
-# Welcome
+# Welcome to PocketPy
 
 PocketPy is a Python3 interpreter.
 
