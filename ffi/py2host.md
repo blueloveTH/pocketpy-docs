@@ -1,0 +1,47 @@
+---
+label: "Py:arrow_right:Host"
+icon: code
+---
+
+Calling host language function from PocketPy is available for threaded virtual machine.
+This process is achieved by [JSONRPC](https://www.jsonrpc.org/specification).
+It can be either synchronous or asynchronous.
+
+## Send JSONRPC request
+
+You can use the builtin function `jsonrpc`.
+
+#### `jsonrpc(method, params, raw=False)`
+Send a JSONRPC request to host language.
+
+Return a json representing the result.
+
++ `method`: the method name
++ `params`: the parameters, should be a list
++ `raw`: by default it is `False`, you will get an expected Python object. If there is any error, an exception will be raised. If you set it to `True`, you will get a `dict` object representing the JSONRPC response.
+
+#### Example
+
+```python
+a = jsonrpc("add", [1, 2])
+print(a)    # 3
+```
+
+It will generate a JSONRPC request like this:
+
+```json
+{
+    "jsonrpc": "2.0",
+    "method": "add",
+    "params": [1, 2],
+}
+```
+
+The response will be like this:
+
+```json
+{
+    "jsonrpc": "2.0",
+    "result": 3,
+}
+```

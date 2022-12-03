@@ -23,6 +23,10 @@ Return `0` for `THREAD_READY`,
 `2` for `THREAD_SUSPENDED`,
 `3` for `THREAD_FINISHED`.
 
+#### `void pkpy_tvm_jsonrpc_response(ThreadedVM* vm, const char* value)`
+
+Write a JSONRPC response to shared string buffer.
+
 #### `void pkpy_tvm_keyboard_interrupt(VM* vm)`
 
 Emit a KeyboardInterrupt signal in order to stop a running threaded virtual machine. 
@@ -31,17 +35,7 @@ Emit a KeyboardInterrupt signal in order to stop a running threaded virtual mach
 
 Read the current JSONRPC request from shared string buffer.
 
-Return a `PyObjectDump*` representing the string.
-You need to call `pkpy_delete` to free the returned `PyObjectDump*` later.
-If the buffer is empty, return `nullptr`.
-
 #### `void pkpy_tvm_reset_state(ThreadedVM* vm)`
 
 Set the state of a threaded virtual machine to `THREAD_READY`.
 The current state should be `THREAD_FINISHED`.
-
-#### `void pkpy_tvm_resume(ThreadedVM* vm, const char* value)`
-
-Resume a suspended threaded virtual machine
-and put the given string into the shared string buffer.
-It is usually used for JSONRPC.
