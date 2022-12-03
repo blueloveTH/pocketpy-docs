@@ -8,10 +8,10 @@ Call Python function from host language is easy.
 You can access any Python object by using `eval()`,
 such as getting a variable, calling a function, etc.
 
-For simple cases, you can also try `getGlobal()`,
+For simple cases, you can also try `get_global()`,
 it reads a global variable and returns a json representation of it.
 
-## `String? getGlobal(String)`
+## `String? get_global(String)`
 Get a global variable of a virtual machine.
 
 Return a json representing the result.
