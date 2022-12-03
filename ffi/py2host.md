@@ -14,11 +14,9 @@ You can use the builtin function `jsonrpc`.
 #### `jsonrpc(method, params, raw=False)`
 Send a JSONRPC request to host language.
 
-Return a json representing the result.
-
 + `method`: the method name
 + `params`: the parameters, should be a list
-+ `raw`: by default it is `False`, you will get an expected Python object. If there is any error, an exception will be raised. If you set it to `True`, you will get a `dict` object representing the JSONRPC response.
++ `raw`: by default it is `False`, you will get an expected Python object. If there is any error, an exception will be raised. If you set `raw=True`, you will get a `dict` object representing the JSONRPC response.
 
 #### Example
 
@@ -45,3 +43,7 @@ The response will be like this:
     "result": 3,
 }
 ```
+
+!!!
+JSONRPC is expensive. It is not recommended to use it in a loop or frame-based logic.
+!!!
