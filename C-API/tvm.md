@@ -27,7 +27,7 @@ Return `0` for `THREAD_READY`,
 
 Emit a KeyboardInterrupt signal in order to stop a running threaded virtual machine. 
 
-#### `PyObjectDump* pkpy_tvm_read_jsonrpc_request(ThreadedVM* vm)`
+#### `char* pkpy_tvm_read_jsonrpc_request(ThreadedVM* vm)`
 
 Read the current JSONRPC request from shared string buffer.
 
