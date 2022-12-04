@@ -27,6 +27,5 @@ label .exit
 ```
 
 !!!
-If you goto an illegal address, you will get `UnexpectedError` if we detect an illegal divert.
-In other case, the behaviour is undefined.
+If we detect an illegal divert, you will get an `UnexpectedError` or the behaviour is undefined.
 !!!
