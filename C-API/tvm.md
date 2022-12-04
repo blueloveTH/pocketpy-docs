@@ -23,10 +23,6 @@ Return `0` for `THREAD_READY`,
 `2` for `THREAD_SUSPENDED`,
 `3` for `THREAD_FINISHED`.
 
-#### `void pkpy_tvm_jsonrpc_response(ThreadedVM* vm, const char* value)`
-
-Write a JSONRPC response to shared string buffer.
-
 #### `char* pkpy_tvm_read_jsonrpc_request(ThreadedVM* vm)`
 
 Read the current JSONRPC request from shared string buffer.
@@ -39,3 +35,7 @@ The current state should be `THREAD_FINISHED`.
 #### `void pkpy_tvm_terminate(ThreadedVM* vm)`
 
 Emit a KeyboardInterrupt signal to stop a running threaded virtual machine. 
+
+#### `void pkpy_tvm_write_jsonrpc_response(ThreadedVM* vm, const char* value)`
+
+Write a JSONRPC response to shared string buffer.
