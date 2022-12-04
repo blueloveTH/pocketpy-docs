@@ -1,6 +1,6 @@
 ---
 title: VM
-icon: code
+icon: dot
 order: 10
 ---
 #### `VM* pkpy_new_vm(bool use_stdio)`

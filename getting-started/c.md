@@ -1,5 +1,5 @@
 ---
-icon: package
+icon: code
 label: 'C/C++'
 order: 5
 ---

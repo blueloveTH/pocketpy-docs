@@ -1,6 +1,6 @@
 ---
 label: "Py:arrow_right:Host"
-icon: code
+icon: dot
 ---
 
 Calling host language function from PocketPy is available for threaded virtual machine.

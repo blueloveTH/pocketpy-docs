@@ -1,6 +1,6 @@
 ---
 title: REPL
-icon: code
+icon: dot
 order: 8
 ---
 #### `REPL* pkpy_new_repl(VM* vm)`

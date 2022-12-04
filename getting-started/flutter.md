@@ -1,5 +1,5 @@
 ---
-icon: package
+icon: code
 label: Flutter
 order: 4
 ---

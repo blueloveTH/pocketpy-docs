@@ -1,6 +1,6 @@
 ---
 title: ThreadedVM
-icon: code
+icon: dot
 order: 9
 ---
 #### `ThreadedVM* pkpy_new_tvm(bool use_stdio)`

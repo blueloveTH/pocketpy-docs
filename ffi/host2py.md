@@ -1,6 +1,6 @@
 ---
 label: "Host:arrow_right:Py"
-icon: code
+icon: dot
 ---
 
 Call Python function from host language is easy.

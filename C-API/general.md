@@ -1,6 +1,6 @@
 ---
 title: General
-icon: code
+icon: dot
 order: 7
 ---
 #### `void pkpy_delete(void* p)`
