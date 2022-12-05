@@ -1,7 +1,7 @@
 ---
 icon: code
 label: Godot Engine
-order: 2
+order: 3
 ---
 
 ## Introduction
