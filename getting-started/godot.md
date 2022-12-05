@@ -6,36 +6,34 @@ order: 2
 
 ## Introduction
 
-PocketPy for Godot is a [Custom C++ module](https://docs.godotengine.org/en/stable/development/cpp/custom_modules_in_cpp.html).
+PocketPy for Godot is integrated via [GDExtension](https://godotengine.org/article/introducing-gd-extensions).
 
-To integrate it, you need to:
+!!!
+GDExtension is a Godot 4.0 feature. Godot 3.x won't work.
+!!!
 
-1. [Download the source code of Godot](https://docs.godotengine.org/en/stable/development/compiling/index.html)
-
-2. Find a directory named `modules`. It is located in the root path
-
-3. Download `pocketpy.zip` and extract it into `modules` directory
-
-4. Recompile the engine
+Please see https://github.com/blueloveTH/godot-cpp/tree/master/pocketpy for details.
 
 ## Example
 
 ```gdscript
-def _ready():
-    var pkpy = PocketPy.new()
+# main.gd
 
-    # Create a virtual machine
-    var vm = pkpy.new_vm()
+extends Node
 
-    # Run a script
-    pkpy.vm_exec(vm, "print('Hello World!')")
+func _ready():
+	# Create a virtual machine
+	var vm = pkpy.new_vm(false)
 
-    # Read the output
-    var _o = pkpy.vm_read_output(vm)
+	# Run a script
+	pkpy.vm_exec(vm, "print('Hello World!')")
 
-    # Parse the output
-    var res = JSON.parse(_o).result
+	# Read the output
+	var _o = pkpy.vm_read_output(vm)
 
-    # Print the output
-    print(res["stdout"])    # "Hello World!\n"
+	# Parse the output
+	var res = JSON.parse_string(_o)
+
+	# Print the output
+	print(res["stdout"])    # "Hello World!\n"
 ```
