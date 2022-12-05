@@ -6,10 +6,15 @@ order: 4
 
 ## Introduction
 
+<p>
+  <a title="Pub" href="https://pub.dev/packages/pocketpy" ><img src="https://img.shields.io/pub/v/pocketpy" /></a>
+</p>
+
 This plugin provides object-oriented interfaces including full functionality of PocketPy [C-API](https://pocketpy.dev/c-api/vm).
 It also provides `JsonRpcServer` class and `os` module bindings.
 
 Run the following script to install this plugin.
+
 ```
 flutter pub add pocketpy
 ```
