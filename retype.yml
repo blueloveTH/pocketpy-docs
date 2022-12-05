@@ -24,6 +24,9 @@ links:
     link: https://github.com/blueloveth/pocketpy/issues
     icon: issue-opened
     target: blank
-  # discord here
+  - text: Discord
+    link: https://discord.gg/WWaq72GzXv
+    icon: comment-discussion
+    target: blank
 footer:
   copyright: "&copy; Copyright {{ year }} - [blueloveTH](https://github.com/blueloveTH) - All rights reserved."

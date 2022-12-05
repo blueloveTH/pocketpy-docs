@@ -46,7 +46,7 @@ The response will be like this:
 
 ## Handle JSONRPC request
 
-You can subclass `JsonRpcServer` and register the request handlers.
+You can use `JsonRpcServer` to register JSONRPC handlers.
 
 #### `JsonRpcServer.register(String name, Function f)`
 

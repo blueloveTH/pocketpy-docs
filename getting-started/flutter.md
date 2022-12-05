@@ -4,19 +4,36 @@ label: Flutter
 order: 4
 ---
 
-## Installation
+## Introduction
 
+This plugin provides object-oriented interfaces including full functionality of PocketPy [C-API](https://pocketpy.dev/c-api/vm).
+It also provides `JsonRpcServer` class and `os` module bindings.
+
+Run the following script to install this plugin.
 ```
 flutter pub add pocketpy
 ```
 
-## Features
+## Requirements
 
-This plugin provides object-oriented interfaces including full functionality of PocketPy [C-API](/C-API/vm.md).
+#### For Android
 
-In addition, the plugin provides `JsonRpcServer` class and `os` module bindings.
+You may need to set the Android NDK version to "21.4.7075529" or higher in `android/app/build.gradle`.
+```
+android {
+    ndkVersion "21.4.7075529"
+}
+```
+
+#### For iOS
+
+It should work without any setup.
 
 
+#### For Windows
+
+VS2017 or higher is required to build the windows `.dll`.
+Make sure you have C++ component installed.
 
 
 ## Basic Example
