@@ -7,7 +7,7 @@ label: Welcome
 
 PocketPy is a lightweight Python interpreter for game engines.
 
-![](./static/logo_flat.png)
+![logo](https://pocketpy.dev/static/logo_flat.png)
 
 ## Features
 
@@ -34,4 +34,4 @@ PocketPy is a lightweight Python interpreter for game engines.
 
 ## Extra Features
 
-For features that are PocketPy specific, see [Extra Features](/extras/goto).
+For features that are PocketPy specific, see [Extra Features](https://pocketpy.dev/extras/goto).
