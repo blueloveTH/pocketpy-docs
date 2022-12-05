@@ -10,6 +10,13 @@ order: 4
 flutter pub add pocketpy
 ```
 
+## Features
+
+This plugin provides object-oriented interfaces including full functionality of PocketPy [C-API](/C-API/vm.md).
+
+In addition, the plugin provides `JsonRpcServer` class and `os` module bindings.
+
+
 
 
 ## Basic Example
@@ -17,11 +24,14 @@ flutter pub add pocketpy
 ```dart
 import 'package:pocketpy/pocketpy.dart' as pkpy;
 
+// Create a virtual machine
 pkpy.VM vm = pkpy.VM();
 
+// Run a script
 String code = 'print("Hello World!")';
 vm.exec(code);
 
+// Read the output
 var _o = vm.read_output();
 print(_o.stdout)	// "Hello world!\n"
 print(_o.stderr)	// ""

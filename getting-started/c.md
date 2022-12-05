@@ -16,7 +16,4 @@ cd pocketpy
 python amalgamate.py
 ```
 
-The C-API is for developers who want to use PocketPy
-in a platform that is not supported by the official yet.
-
 For references, see [C-API](/C-API/vm.md).

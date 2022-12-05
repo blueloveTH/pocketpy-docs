@@ -1,7 +1,7 @@
 ---
 icon: code
-label: Unity Engine
-order: 3
+label: Godot Engine
+order: 2
 ---
 
 Will be available soon.
