@@ -39,5 +39,12 @@ Return the cosine of `x`.
 
 Return the tangent of `x`.
 
+### `math.isnan(x)`
+
+Return `True` if `x` is a NaN (not a number), and `False` otherwise.
+
+### `math.isinf(x)`
+
+Return `True` if `x` is positive or negative infinity, and `False` otherwise.
 
 
