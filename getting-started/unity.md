@@ -6,22 +6,9 @@ order: 2
 
 ## Introduction
 
-PocketPy for Unity can be installed via UPM.
+PocketPy for Unity can be installed via Unity Asset Store.
 
-The package source is located in https://github.com/blueloveTH/pocketpy/tree/main/plugins/unity/com.bl.pocketpy
-
-To install it, first clone our repository.
-
-```
-git clone https://github.com/blueloveth/pocketpy.git
-```
-
-Then:
-
-1. Open the package manager.
-2. Click the plus icon on the top left.
-3. Select "Add package from disk".
-4. Select `plugins/unity/com.bl.pocketpy/package.json`
+https://assetstore.unity.com/packages/slug/241120
 
 
 
