@@ -3,7 +3,7 @@ output: .retype
 url: https://pocketpy.dev
 branding:
   title: PocketPy
-  label: v0.5
+  label: v0.6
   logo: "./static/logo.png"
 favicon: "./static/logo.png"
 meta:
