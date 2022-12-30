@@ -7,10 +7,10 @@ order: 8
 
 Create a REPL, using the given virtual machine as the backend.
 
-#### `int pkpy_repl_input(REPL* r, const char* line)`
+#### `void pkpy_repl_input(REPL* r, const char* line)`
 
 Input a source line to an interactive console.
 
-Return `0` if need more lines,
-`1` if execution happened,
-`2` if execution skipped (compile error or empty input).
+#### `int pkpy_repl_last_input_result(REPL* r)`
+
+Check if the REPL needs more lines.
