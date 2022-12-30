@@ -7,11 +7,9 @@ order: 10
 
 Create a virtual machine.
 
-#### `bool pkpy_vm_add_module(VM* vm, const char* name, const char* source)`
+#### `void pkpy_vm_add_module(VM* vm, const char* name, const char* source)`
 
 Add a source module into a virtual machine.
-
-Return `true` if there is no complie error.
 
 #### `char* pkpy_vm_eval(VM* vm, const char* source)`
 
@@ -20,11 +18,9 @@ Evaluate an expression.
 Return a json representing the result.
 If there is any error, return `nullptr`.
 
-#### `bool pkpy_vm_exec(VM* vm, const char* source)`
+#### `void pkpy_vm_exec(VM* vm, const char* source)`
 
 Run a given source on a virtual machine.
-
-Return `true` if there is no compile error.
 
 #### `char* pkpy_vm_get_global(VM* vm, const char* name)`
 

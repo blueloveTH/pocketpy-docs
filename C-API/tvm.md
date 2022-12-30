@@ -7,12 +7,10 @@ order: 9
 
 Create a virtual machine that supports asynchronous execution.
 
-#### `bool pkpy_tvm_exec_async(VM* vm, const char* source)`
+#### `void pkpy_tvm_exec_async(VM* vm, const char* source)`
 
 Run a given source on a threaded virtual machine.
 The excution will be started in a new thread.
-
-Return `true` if there is no compile error.
 
 #### `int pkpy_tvm_get_state(ThreadedVM* vm)`
 
