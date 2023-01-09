@@ -6,4 +6,4 @@ label: Performance
 
 # Performance
 
-The speed of PocketPy is approximately 30% of CPython.
+The speed of PocketPy is approximately 50% of CPython.
